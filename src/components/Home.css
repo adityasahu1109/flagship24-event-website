@@ -1,0 +1,105 @@
+.home-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 70px;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+}
+
+.home-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 100%;
+}
+
+.home-text {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+}
+
+.presented-by {
+  color: #a1a1aa;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.home-text h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(90deg, #fff 0%, #a1a1aa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.event-details p {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #d4d4d8;
+}
+
+.home-logo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+}
+
+.home-logo img {
+  max-width: 900px;
+  height: auto;
+}
+
+.metrics {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.metric {
+  text-align: center;
+  min-width: 150px;
+}
+
+.metric-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2563eb; /* Blue accent */
+  margin-bottom: 0.5rem;
+}
+
+.metric-label {
+  font-size: 1.1rem;
+  color: #a1a1aa;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 768px) {
+  .home-content {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .home-text {
+    text-align: center;
+  }
+  
+  .home-text h1 {
+    font-size: 3rem;
+  }
+  
+  .metrics {
+    justify-content: center;
+  }
+}
